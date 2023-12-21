@@ -68,3 +68,6 @@ Implement the concept of package and interface.
 
 ### Lab 5:
 Implement the concept of multithreading
+
+### Lab 6:
+Implement the Generics Concept in your domain (Generics Class, methods, interfaces)
