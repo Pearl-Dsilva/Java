@@ -17,7 +17,7 @@ public class StringMan {
                 "at a starting price of only Rs 1 lakh. These were the words of Ratan Tata in a\r\n" + //
                 "recent post by Humans of Bombay which formed the basis of his decision to come\r\n" + //
                 "up with a car like Tata Nano.";
-        String text2 = "Tata";
+        String text2 = "hello";
         System.out.println("String charAt(): " + text.charAt(25));
         System.out.println("String compareTo(): " + text.compareTo(text2));
         System.out.println("String concat(): " + text.concat(text2));

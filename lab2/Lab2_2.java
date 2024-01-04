@@ -25,7 +25,7 @@ public class Lab2_2 {
         System.out.println("1. append(): " + sb);
         sb.insert(1, "Java");
         System.out.println("2. insert(): " + sb);
-        sb.replace(1, 3, "Java");
+        sb.replace(1, 3, "noooo");
         System.out.println("3. replace(): " + sb);
         sb.delete(1, 4);
         System.out.println("4. delete(): " + sb);
