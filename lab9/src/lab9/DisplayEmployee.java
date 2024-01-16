@@ -12,12 +12,16 @@ import javax.swing.JTable;
 import java.awt.Color;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.JScrollPane;
+import javax.swing.JLabel;
+import java.awt.Font;
+import javax.swing.SwingConstants;
 
 public class DisplayEmployee extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private JTable table;
+	private JLabel lblNewLabel;
 
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -92,7 +96,12 @@ public class DisplayEmployee extends JFrame {
 
 		contentPane.add(scrollPane);
 		contentPane.add(table.getTableHeader());
+		
+		lblNewLabel = new JLabel("View Details");
+		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 16));
+		lblNewLabel.setBounds(10, 10, 416, 13);
+		contentPane.add(lblNewLabel);
 		ReadData();
 	}
-
 }

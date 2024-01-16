@@ -16,21 +16,24 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.SwingConstants;
+import java.awt.Color;
+import java.awt.Font;
 
 public class Employee extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private JTextField textField_1;
+	private JLabel lblAge;
+	private JTextField textField;
+	private JLabel lblDepartment;
+	private JTextField textField_2;
 
 	static final String DB_URL = "jdbc:mysql://localhost:3306/mca";
 	static final String USER = "root";
 	static final String PASS = "Zombie@2347245";
 	static final String QUERY = "SELECT id, first, last, age FROM Employees";
-	private JLabel lblAge;
-	private JTextField textField;
-	private JLabel lblDepartment;
-	private JTextField textField_2;
 
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
@@ -114,5 +117,13 @@ public class Employee extends JFrame {
 		textField_2.setColumns(10);
 		textField_2.setBounds(191, 106, 96, 19);
 		contentPane.add(textField_2);
+		
+		JLabel lblNewLabel_1 = new JLabel("Add Details");
+		lblNewLabel_1.setFont(new Font("Tahoma", Font.BOLD, 16));
+		lblNewLabel_1.setBackground(new Color(255, 255, 255));
+		lblNewLabel_1.setForeground(new Color(0, 0, 0));
+		lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_1.setBounds(10, 10, 416, 19);
+		contentPane.add(lblNewLabel_1);
 	}
 }
